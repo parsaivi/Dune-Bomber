@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="570.0" prefWidth="795.0" stylesheets="@../CSS/Avatar.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AvatarView">
+    <children>
+        <ImageView nodeOrientation="INHERIT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../Images/Avatar.jpg" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" style="-fx-background-color: rgba(0, 0, 0, 0.5);" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
+            <children>
+                <Label text="Change Avatar" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER" spacing="20.0">
+                    <children>
+                        <ImageView fx:id="avatar1" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#avatar1Click" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                            <image>
+                                <Image url="@../Images/ProfilePictures/7.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="avatar2" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#avatar2Click" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                            <image>
+                                <Image url="@../Images/ProfilePictures/2.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="avatar3" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#avatar3Click" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                            <image>
+                                <Image url="@../Images/ProfilePictures/9.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="avatar4" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#avatar4Click" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                            <image>
+                                <Image url="@../Images/ProfilePictures/10.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="avatar5" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#avatar5Click" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                            <image>
+                                <Image url="@../Images/ProfilePictures/1.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <Button fx:id="uploadButton" mnemonicParsing="false" onMouseClicked="#uploadClicked" text="Upload Avatar">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="dragDrop" text="Or Drag and Drop" textFill="#d9b38c">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Pane fx:id="dropPane" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" style="-fx-border-color: #d9b38c; -fx-border-width: 2; -fx-border-style: dashed;">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Pane>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+      <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="100.0" text="Back" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="580.0" AnchorPane.topAnchor="520.0" />
+    </children>
+</AnchorPane>

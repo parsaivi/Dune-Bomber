@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/SignUp.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterMenuView">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Images/signUp.jpg" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" layoutX="200.0" layoutY="100.0" prefHeight="400.0" prefWidth="400.0" spacing="20.0">
+            <children>
+                <Label text="Sign Up" textFill="#d1b673">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                </Label>
+                <TextField fx:id="signUpUsername" promptText="Username" styleClass="text-field" />
+                <PasswordField fx:id="signUpPassword" promptText="Password" styleClass="text-field" />
+                <Button fx:id="signUpButton2nd" mnemonicParsing="false" onMouseClicked="#signUpButtonAction" prefHeight="40.0" prefWidth="200.0" styleClass="button" text="Sign Up">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                </Button>
+            </children>
+        </VBox>
+        <Button layoutX="14.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#backButtonClicked" onMouseEntered="#backDragged" prefHeight="25.0" prefWidth="81.0" styleClass="button" text="Back">
+            <effect>
+                <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>

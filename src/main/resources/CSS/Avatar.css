@@ -1,0 +1,29 @@
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+}
+
+.button {
+    -fx-background-color: #d9b38c;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-pref-width: 160px;
+    -fx-pref-height: 30px;
+}
+
+.image{
+    -fx-border-color: #d9b38c;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+
+}
+
+.image:hover {
+    -fx-border-color: #8caad9;
+}
+
+.image:pressed {
+    -fx-border-color: #345d9d;
+}

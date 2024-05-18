@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/Loading.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoadingController">
+    <children>
+        <ImageView fx:id="backgroundImageView" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" />
+        <VBox alignment="CENTER" layoutX="300.0" layoutY="500.0" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Text fill="#d1b673" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading...">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

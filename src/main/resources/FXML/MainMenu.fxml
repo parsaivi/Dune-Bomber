@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/MainMenu.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainMenuView">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <image>
+                <Image url="@../Images/MainMenu.jpg" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="450.0" spacing="30.0" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <ImageView fx:id="avatarImageView" fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" />
+            </children>
+        </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="520.0">
+         <children>
+            <Button fx:id="profileButton" mnemonicParsing="false" onMouseClicked="#profileButtonClicked" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #1a1a1a" text="Profile" textFill="#b97231">
+                <effect>
+                    <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                </effect>
+                <font>
+                    <Font name="Cascadia Code Regular" size="15.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #1a1a1a" text="soon..." textFill="#b97231">
+                <effect>
+                    <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                </effect>
+                <font>
+                    <Font name="Cascadia Code Regular" size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="scoreBoardButton" mnemonicParsing="false" onMouseClicked="#scoreBoardButtonClicked" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #1a1a1a" text="ScoreBoard" textFill="#b97231">
+                <effect>
+                    <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                </effect>
+                <font>
+                    <Font name="Cascadia Code Regular" size="15.0" />
+                </font>
+            </Button>
+         </children>
+      </HBox>
+        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="200.0" spacing="30.0" AnchorPane.bottomAnchor="262.0" AnchorPane.leftAnchor="579.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <Button fx:id="startGameButton" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#startButtonClicked" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #1a1a1a;" styleClass="button" text="Start New Game" textFill="#b97231">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+               <font>
+                  <Font name="Cascadia Code Regular" size="15.0" />
+               </font>
+                </Button>
+                <Button fx:id="continueButton" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#continueButtonClicked" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #1a1a1a" styleClass="button" text="Continue Game" textFill="#b97231">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+               <font>
+                  <Font name="Cascadia Code Regular" size="15.0" />
+               </font>
+                </Button>
+                <Button fx:id="settingButton" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#settingButtonClicked" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #1a1a1a" styleClass="button" text="Settings" textFill="#b97231">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                    <font>
+                        <Font name="Cascadia Code Regular" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="exitButton" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#exitButtonClicked" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #a66025;" styleClass="button" text="Exit">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                    <font>
+                        <Font name="Cascadia Code Regular" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+      <Label fx:id="username" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1a1a1a; -fx-font-size: 18 ;" textAlignment="CENTER" textFill="#b97231" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="518.0" AnchorPane.leftAnchor="570.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

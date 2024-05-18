@@ -1,0 +1,29 @@
+/* profile-menu.css */
+
+.root {
+    -fx-background-color: #2d2d2d;
+}
+
+.label {
+    -fx-font-family: "Arial";
+}
+
+.text-field, .password-field {
+    -fx-background-color: #4d4d4d;
+    -fx-font-family: "Arial";
+}
+
+.button {
+    -fx-background-color: #4d4d4d;
+    -fx-text-fill: #e38e00;
+    -fx-font-family: "Arial";
+}
+
+.image{
+    -fx-border-color: #4d4d4d;
+    -fx-background-color: #4d4d4d;
+    -fx-border-width: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-size: 110% 110%;
+}

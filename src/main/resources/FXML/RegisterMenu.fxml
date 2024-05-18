@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefWidth="800.0" styleClass="background" stylesheets="@../CSS/Register.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterMenuView">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Images/Register.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="#a66816" layoutX="50.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="500.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font name="Serif Regular" size="36.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" height="10.0" radius="4.5" width="10.0" />
+            </effect>
+         <stroke>
+            <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </stroke>
+        </Text>
+        <HBox alignment="CENTER" layoutX="150.0" layoutY="450.0" prefHeight="100.0" prefWidth="500.0" spacing="20.0">
+            <children>
+                <Button fx:id="signInButton" mnemonicParsing="false" onMouseClicked="#signInButtonClicked" onMouseEntered="#signInDragged" onMouseExited="#dragOut" prefHeight="50.0" prefWidth="200.0" styleClass="button" text="Sign In">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                </Button>
+                <Button fx:id="guestButton" mnemonicParsing="false" onMouseClicked="#guestButtonClicked" onMouseEntered="#guestDragged" onMouseExited="#dragOut" prefHeight="50.0" prefWidth="250.0" styleClass="button" text="Guest">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                </Button>
+                <Button fx:id="signUpButton" mnemonicParsing="false" onMouseClicked="#signUpButtonClicked" onMouseEntered="#signUpDragged" onMouseExited="#dragOut" prefHeight="50.0" prefWidth="200.0" styleClass="button" text="Sign Up">
+                    <effect>
+                        <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+                    </effect>
+                </Button>
+            </children>
+        </HBox>
+          <Button fx:id="exitButton" layoutX="14.0" layoutY="544.0" mnemonicParsing="false" onMouseClicked="#exitButtonClicked" onMouseEntered="#exitDragged" onMouseExited="#dragOut" prefHeight="25.0" prefWidth="81.0" styleClass="button" text="Exit">
+              <effect>
+                  <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+              </effect>
+          </Button>
+        <Text fx:id="errorText" fill="#1b1e2e" layoutX="150.0" layoutY="50.0" strokeMiterLimit="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in or sign up to continue" textAlignment="CENTER" wrappingWidth="500.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="550.0">
+            <font>
+                <Font name="Serif Regular" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
+            </effect>
+        </Text>
+    </children>
+</AnchorPane>

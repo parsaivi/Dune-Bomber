@@ -1,0 +1,32 @@
+/* scoreboard.css */
+
+.root {
+    -fx-background-color: black;
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}
+
+.chart {
+    -fx-background-color: #403b3b;
+    -fx-border-color: white;
+}
+
+.button {
+    -fx-background-color: #403b3b;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: #5a5757;
+}
+
+.choice-box{
+    -fx-background-color: #403b3b;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}

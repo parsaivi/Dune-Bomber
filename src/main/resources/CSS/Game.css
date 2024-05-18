@@ -1,0 +1,79 @@
+/* Background */
+.root {
+   /* -fx-background-color: #c2b280; /* Desert sand color */
+}
+
+/* Game Area */
+.game-area {
+    -fx-background-color: transparent;
+}
+
+.game-field {
+    -fx-background-color: transparent;
+ /*   -fx-border-color: #8b4513; /* Dark brown border */
+ /*   -fx-border-width: 2px;*/
+}
+
+/* Status Bar */
+.status-bar {
+    -fx-padding: 5px 10px;
+}
+
+.status-label {
+    -fx-text-fill: #fdf5e6; /* Pale sand color for text */
+    -fx-font-weight: bold;
+}
+
+.status-value {
+    -fx-text-fill: #fdf5e6; /* Pale sand color for text */
+}
+
+.hp-bar {
+    -fx-background-color: #0d7c23; /* Crimson red for HP bar */
+}
+
+.energy-bar {
+    -fx-background-color: #5caad0; /* Orange for energy bar */
+}
+
+.status-panel {
+/*    -fx-background-color: rgba(0, 0, 0, 0.75); */
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
+.error-label {
+    -fx-text-fill: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.button {
+    -fx-background-color: #25201d; /* Dark brown */
+    -fx-text-fill: #a85620; /* Pale sand color for text */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-font-family: 'EuroStyle', sans-serif;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-text-fill: #f3a025; /* Sienna */
+}
+
+.button:disabled {
+    -fx-background-color: #d3d3d3; /* Light gray */
+    -fx-text-fill: #a9a9a9; /* Dark gray */
+}
+
+.circle-button {
+    -fx-background-color: #201e1a; /* Dark brown */
+    -fx-text-fill: #26aaa4; /* Pale sand color for text */
+    -fx-font-weight: bold;
+    -fx-font-family: 'EuroStyle', sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 50%;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/GameOver.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GameOverView">
+    <ImageView fx:id="backImage" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="40.0">
+        <Image url="@../Images/Game/gameOver.png" />
+    </ImageView>
+    <Label fx:id="WOrL" alignment="CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="475.0" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #281914;" text="Label" textFill="#e9915a" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="435.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="475.0" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #281914;" text="You" textFill="#e9915a" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="300.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="224.0" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #1d1f1e;" text="lastWave" textFill="#2e837b" AnchorPane.bottomAnchor="341.0" AnchorPane.leftAnchor="119.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label fx:id="lastWave" alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="224.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #1d1f1e;" text="3" textFill="#2e837b" AnchorPane.bottomAnchor="341.0" AnchorPane.leftAnchor="332.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="272.0" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #1d1f1e;" text="score" textFill="#2e837b" AnchorPane.bottomAnchor="293.0" AnchorPane.leftAnchor="119.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label fx:id="score" alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="272.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #1d1f1e;" text="12" textFill="#2e837b" AnchorPane.bottomAnchor="293.0" AnchorPane.leftAnchor="332.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="322.0" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #1d1f1e;" text="accuracy" textFill="#2e837b" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="119.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label fx:id="accuracy" alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="322.0" prefHeight="45.0" prefWidth="154.0" style="-fx-background-color: #1d1f1e;" text="45%" textFill="#2e837b" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="332.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+   <Button fx:id="backButton" layoutX="549.0" layoutY="378.0" mnemonicParsing="false" onMouseClicked="#backClicked" prefHeight="60.0" prefWidth="130.0" text="Back to Menu" />
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/Game.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GameLauncher">
+    <ImageView fx:id="backImage" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+        <Image url="@../Images/back3.jpg" />
+    </ImageView>
+    <AnchorPane styleClass="game-area">
+        <Pane fx:id="gamePane" prefHeight="600.0" prefWidth="800.0" styleClass="game-field">
+        </Pane>
+    </AnchorPane>
+    <ImageView fitHeight="50.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <image>
+            <Image url="@../Images/Game/TopIcon.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="100.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="500.0">
+        <image>
+            <Image url="@../Images/statusBar.png" />
+        </image>
+    </ImageView>
+    <ProgressBar fx:id="HPBar" layoutX="300.0" layoutY="620.0" prefWidth="200.0" progress="0.39" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="310.0" />
+    <ProgressBar fx:id="BoostBar" prefWidth="150.0" progress="0.71" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="40.0" />
+    <Label fx:id="atomicBombs" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #1c1d2a;" text="0" textAlignment="CENTER" textFill="#c37730" AnchorPane.leftAnchor="680.0" AnchorPane.topAnchor="570.0" />
+    <Label fx:id="clusterBombs" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #1c1d2a;" text="0" textAlignment="CENTER" textFill="#c37730" AnchorPane.leftAnchor="750.0" AnchorPane.topAnchor="570.0" />
+    <Label fx:id="kills" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #1c1d2a;" text="0" textAlignment="CENTER" textFill="#c37730" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="560.0" />
+    <Label fx:id="waveNumberLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #1c1d2a;" text="1" textAlignment="CENTER" textFill="#c37730" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="530.0" />
+    <ImageView fitHeight="65.0" fitWidth="34.0" layoutX="-100.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+        <image>
+            <Image url="@../Images/Game/SnowIcon.png" />
+        </image>
+    </ImageView>
+   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="130.0">
+        <image>
+             <Image url="@../Images/Game/atomicBombIcon.png" />
+        </image>
+   </ImageView>
+   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="60.0">
+        <image>
+             <Image url="@../Images/Game/clusterBombIcon.png" />
+        </image>
+   </ImageView>
+   <Label fx:id="errorLabel" alignment="TOP_RIGHT" layoutX="321.0" layoutY="14.0" prefHeight="26.0" prefWidth="181.0" style="-fx-background-color: #201611;" styleClass="error-label" textFill="RED" />
+   <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="142.0" layoutY="-100.0" onMouseClicked="#pauseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+       <image>
+           <Image url="@../Images/Game/pause.png" />
+       </image>
+   </ImageView>
+
+</AnchorPane>

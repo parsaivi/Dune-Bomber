@@ -1,0 +1,39 @@
+.root {
+    -fx-background-color: black;
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-text-fill: #d9b38c;
+}
+
+.button {
+    -fx-background-color: #d9b38c;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-pref-width: 160px;
+    -fx-pref-height: 30px;
+}
+
+.check-box {
+    -fx-text-fill: #d9b38c;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.check-box > .box {
+    -fx-background-color: #d9b38c;
+}
+
+.choice-box {
+    -fx-background-color: #d9b38c;
+    -fx-mark-color: black;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.choice-box > .label {
+    -fx-text-fill: black;
+}

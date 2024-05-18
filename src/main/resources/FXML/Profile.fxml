@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/Profile.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfileView">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0">
+            <image>
+                <Image url="@../Images/Profile.jpg" />
+            </image>
+        </ImageView>
+        <Label style="-fx-background-color: #22222a; -fx-background-size: 200;" text="Profile" textAlignment="CENTER" textFill="#e38e00" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="38.0">
+            <font>
+                <Font name="Arial Bold" size="26.0" />
+            </font>
+        </Label>
+        <VBox alignment="CENTER" layoutX="453.0" layoutY="-128.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" style="-fx-background-color: #1c1d2a;" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0">
+            <children>
+                <Label text="Username" textFill="#e38e00">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" onKeyTyped="#usernameChanged" promptText="Enter new username" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Password" textFill="#e38e00">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="passwordField" onKeyTyped="#passwordChanged" promptText="Enter new password" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+            <VBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="306.0">
+                <children>
+                    <Label fx:id="errorLabel" textFill="RED">
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
+                        </VBox.margin>
+                    </Label>
+                    <Button fx:id="updateButton" mnemonicParsing="false" onMouseClicked="#saveClicked" prefWidth="200.0" text="Save">
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                        </VBox.margin>
+                    </Button>
+                    <Button fx:id="deleteButton" mnemonicParsing="false" onMouseClicked="#deleteAccountClicked" prefWidth="200.0" text="Delete Account">
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                        </VBox.margin>
+                    </Button>
+                    <Button fx:id="logoutButton" mnemonicParsing="false" onMouseClicked="#logOutClicked" prefWidth="200.0" text="Logout">
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                        </VBox.margin>
+                    </Button>
+                    <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefWidth="200.0" text="Back">
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                        </VBox.margin>
+                    </Button>
+                </children>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </VBox>
+      <ImageView fx:id="profileImage" fitHeight="300.0" fitWidth="300.0" layoutX="58.0" layoutY="560.0" onMouseClicked="#avatarClicked" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="120.0" styleClass="image">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+/* Background */
+.root {
+    /* -fx-background-color: #c2b280; /* Desert sand color */
+}
+
+/* Game Area */
+.game-area {
+    -fx-background-color: transparent;
+}
+
+.game-field {
+    -fx-background-color: transparent;
+    /*   -fx-border-color: #8b4513; /* Dark brown border */
+    /*   -fx-border-width: 2px;*/
+}
+
+/* Status Bar */
+.status-bar {
+    -fx-padding: 5px 10px;
+}
+
+.status-label {
+    -fx-text-fill: #fdf5e6; /* Pale sand color for text */
+    -fx-font-weight: bold;
+}
+
+.status-value {
+    -fx-text-fill: #fdf5e6; /* Pale sand color for text */
+}
+
+.status-panel {
+    /*    -fx-background-color: rgba(0, 0, 0, 0.75); */
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.button {
+    -fx-background-color: #191514; /* Dark brown */
+    -fx-text-fill: #d7804c; /* Pale sand color for text */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-font-family: 'EuroStyle', sans-serif;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-text-fill: #e6cf90; /* Sienna */
+}
+
+.button:disabled {
+    -fx-background-color: #d3d3d3; /* Light gray */
+    -fx-text-fill: #a9a9a9; /* Dark gray */
+}

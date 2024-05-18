@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/Setting.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SettingView">
+    <ImageView fitHeight="600.0" fitWidth="800.0">
+        <image>
+            <Image url="@../Images/setting.jpg" />
+        </image>
+    </ImageView>
+
+    <VBox alignment="BOTTOM_LEFT" prefWidth="200.0" spacing="30.0" style="-fx-background-color: #3d4146" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="360.0">
+        <Label text="Display" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </Label>
+        <CheckBox fx:id="blackAndWhite" onMouseClicked="#blackAndWhiteClicked" text="Black and White Mode" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </CheckBox>
+        <Label text="Controls" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </Label>
+        <Button fx:id="remapControls" onMouseClicked="#remapControlClicked" text="Remap Controls">
+            <VBox.margin>
+                <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="backButton" onMouseClicked="#backButtonClicked" text="Back">
+            <VBox.margin>
+                <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </Button>
+    </VBox>
+    <VBox alignment="BOTTOM_LEFT" prefWidth="200.0" spacing="30.0" style="-fx-background-color: #3d4146" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="560.0" AnchorPane.rightAnchor="60.0">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+        <Label text="Difficulty Level" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </Label>
+        <ChoiceBox fx:id="difficultyChoice" onMouseClicked="#difficultyChoiceClicked" onMouseExited="#difficultyChoiceClicked" prefWidth="180.0">
+            <VBox.margin>
+                <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+            <String fx:value="Easy" />
+            <String fx:value="Medium" />
+            <String fx:value="Hard" />
+        </ChoiceBox>
+        <Label text="Audio" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </Label>
+        <CheckBox fx:id="muteGameAudio" onMouseClicked="#muteGameAudioClicked" text="Mute Game Audio" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </CheckBox>
+        <CheckBox fx:id="muteMusic" onMouseClicked="#muteMusicClicked" text="Mute Music" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </CheckBox>
+    </VBox>
+
+</AnchorPane>
