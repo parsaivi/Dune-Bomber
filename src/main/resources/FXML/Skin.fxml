@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../CSS/SkinMenuView.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SkinView">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../Images/skinn.jpg" />
+            </image>
+        </ImageView>
+        <Button layoutX="400.0" layoutY="568.0" mnemonicParsing="false" onMouseClicked="#backButton" prefHeight="40.0" prefWidth="100.0" text="Back" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="350.0" />
+        <Label layoutX="677.0" layoutY="39.0" styleClass="title" text="SKINS">
+            <font>
+                <Font name="Courier New Bold" size="36.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="150.0">
+            <children>
+                <VBox alignment="CENTER" spacing="100.0">
+                    <children>
+                        <Label styleClass="label" text="Buildings">
+                            <font>
+                                <Font name="Courier New Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="buildingSkinImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Game/building3.png" />
+                            </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" styleClass="button" text="Change Skin">
+                            <font>
+                                <Font name="Courier New Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="110.0">
+                    <children>
+                        <Label styleClass="label" text="Jet">
+                            <font>
+                                <Font name="Courier New Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="jetSkinImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Game/jet1.png" />
+                            </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onMouseClicked="#JetChangeSkin" styleClass="button" text="Change Skin">
+                            <font>
+                                <Font name="Courier New Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="110.0">
+                    <children>
+                        <Label styleClass="label" text="Tank">
+                            <font>
+                                <Font name="Courier New Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="tankSkinImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Game/tank1.png" />
+                            </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" styleClass="button" text="Change Skin">
+                            <font>
+                                <Font name="Courier New Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

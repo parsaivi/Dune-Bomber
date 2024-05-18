@@ -1,11 +1,13 @@
 package model.gameModels.jet;
 
+import model.enums.Skins;
 import model.gameModels.GameField;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class WarJet extends Rectangle {
     //    public ImageView imageView;
@@ -23,7 +25,11 @@ public class WarJet extends Rectangle {
 
     public WarJet() {
         super(0, 100, 70, 30);
-        this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/Jet.png")));
+        warJetFill();
+    }
+
+    private void warJetFill() {
+        this.setFill(new ImagePattern(new Image(Skins.activatedJetSkin)));
     }
 
     public WarJet(WarJet warJet) {

@@ -34,13 +34,22 @@ public class Tank extends Target implements Vehicle {
 
     private void tankSetFill() {
         Random random = new Random();
-        int i = random.nextInt(3);
+        int i = random.nextInt(6);
         switch (i) {
             case 0:
                 this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/tank1.png")));
                 break;
             case 1:
                 this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/tank2.png")));
+                break;
+            case 2:
+                this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/tank3.png")));
+                break;
+            case 3:
+                this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/tank4.png")));
+                break;
+            case 4:
+                this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/tank5.png")));
                 break;
             default:
                 this.setFill(new ImagePattern(new Image("file:src/main/resources/Images/Game/tank6.png")));

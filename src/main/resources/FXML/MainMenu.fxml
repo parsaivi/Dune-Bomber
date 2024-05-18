@@ -28,7 +28,7 @@
                     <Font name="Cascadia Code Regular" size="15.0" />
                 </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #1a1a1a" text="soon..." textFill="#b97231">
+            <Button mnemonicParsing="false" onMouseClicked="#SkinsMenuClicked" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #1a1a1a" text="Skins" textFill="#b97231">
                 <effect>
                     <DropShadow color="#00000080" height="5.0" radius="2.5" width="5.0" />
                 </effect>

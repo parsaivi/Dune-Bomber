@@ -1,0 +1,29 @@
+.root {
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.title {
+    -fx-text-fill: #1a1513;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 0.0, 0.0);
+}
+
+
+
+.label {
+    -fx-text-fill: #d2b57f;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0.5, 0.0, 0.0);
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #c5a468, #855535);
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0.5, 0.0, 0.0);
+    -fx-padding: 10px 20px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e3ca91, #703f1f);
+}

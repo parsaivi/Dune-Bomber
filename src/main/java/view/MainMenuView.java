@@ -219,4 +219,38 @@ public class MainMenuView {
             e.printStackTrace();
         }
     }
+
+    public void SkinsMenuClicked(MouseEvent event) {
+        try {
+            FXMLLoader loadingLoader = new FXMLLoader(getClass().getResource("/FXML/Loading.fxml"));
+            Parent loadingRoot = loadingLoader.load();
+            Scene loadingScene = new Scene(loadingRoot, 800, 600);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(loadingScene);
+            // 3. لود کردن داده‌های مورد نیاز برای صفحه منوی اصلی در یک رشته جدید
+            Thread loadDataThread = new Thread(() -> {
+                // لود اطلاعات کاربر، تصویر پروفایل، و دیگر داده‌ها
+
+                // 4. بارگذاری صفحه منوی اصلی و انتقال به آن
+                Platform.runLater(() -> {
+                    try {
+                        FXMLLoader skinLoader = new FXMLLoader(getClass().getResource("/FXML/Skin.fxml"));
+                        Parent skinRoot = skinLoader.load();
+                        Scene skinScene = new Scene(skinRoot, 800, 600);
+                        SkinView skinView = skinLoader.getController();
+                        skinView.setMainMenuView(this);
+                        Thread.sleep(1000);
+                        stage.setScene(skinScene);
+                        stage.show();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
+            });
+            loadDataThread.start();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
